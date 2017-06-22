@@ -11,7 +11,7 @@ with codecs.open('proxybroker/__init__.py', mode='r', encoding='utf-8') as f:
 with codecs.open('README.rst', mode='r', encoding='utf-8') as f:
     INFO['long_description'] = f.read()
 
-REQUIRES = ['aiodns', 'aiohttp', 'maxminddb']
+REQUIRES = ['aiodns==1.1.1', 'aiohttp==2.2.0', 'maxminddb==1.3.0']
 PACKAGES = ['proxybroker', 'proxybroker.data']
 PACKAGE_DATA = {'': ['LICENSE'], INFO['package']: ['data/*.mmdb']}
 
